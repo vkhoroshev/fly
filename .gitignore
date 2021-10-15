@@ -1,0 +1,5 @@
+/.idea/
+/out/
+/server/target/
+/client/target/
+*.iml

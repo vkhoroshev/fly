@@ -1,0 +1,20 @@
+.root {
+    -fx-font-size: 20;
+}
+
+.text-area:focused {
+    -fx-border-color: #FFCC00;
+}
+
+.text-field:focused {
+    -fx-border-color: #FFCC00;
+}
+
+.button {
+    -fx-background-color: #FFEC8B;
+}
+
+.button:hover {
+    -fx-background-color: #FFCC00;
+    -fx-font-weight: bold;
+}
