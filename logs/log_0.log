@@ -1,0 +1,20 @@
+окт. 28, 2021 5:00:09 PM server.Server <init>
+INFO: Server started!
+окт. 28, 2021 5:00:20 PM server.Server <init>
+INFO: Client connected
+окт. 28, 2021 5:00:34 PM server.ClientHandler lambda$new$0
+INFO: Client disconnected
+окт. 28, 2021 5:02:52 PM server.Server <init>
+INFO: Server started!
+окт. 28, 2021 5:03:16 PM server.Server <init>
+INFO: Server started!
+окт. 28, 2021 5:03:24 PM server.Server <init>
+INFO: Client connected
+окт. 28, 2021 5:03:36 PM server.ClientHandler lambda$new$0
+INFO: Client disconnected
+окт. 28, 2021 5:04:43 PM server.Server <init>
+INFO: Server started!
+окт. 28, 2021 5:04:53 PM server.Server <init>
+INFO: Client connected
+окт. 28, 2021 5:04:58 PM server.ClientHandler lambda$new$0
+INFO: Client disconnected
