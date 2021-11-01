@@ -5,8 +5,11 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
+import java.util.logging.Logger;
 
 public class ClientHandler {
+    private static final Logger logger = Logger.getLogger(ClientHandler.class.getName());
+
     Socket socket;
     Server server;
     DataInputStream in;
@@ -34,7 +37,7 @@ public class ClientHandler {
 
                         if (str.equals("/end")) {
                             sendMsg("/end");
-                            System.out.println("Client disconnected");
+                            logger.info("Client disconnected");
                             break;
                         }
                         if (str.startsWith("/auth ")) {
@@ -78,7 +81,7 @@ public class ClientHandler {
                         if (str.startsWith("/")) {
                             if (str.equals("/end")) {
                                 sendMsg("/end");
-                                System.out.println("Client disconnected");
+                                logger.info("Client disconnected");
                                 break;
                             }
 

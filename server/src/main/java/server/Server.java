@@ -5,8 +5,11 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Server {
+    private static final Logger logger = Logger.getLogger(Server.class.getName());
     private ServerSocket server;
     private Socket socket;
     private final int PORT = 8189;
@@ -19,11 +22,11 @@ public class Server {
         authService = new SimpleAuthService();
         try {
             server = new ServerSocket(PORT);
-            System.out.println("Server started!");
+            logger.info("Server started!");
 
             while (true) {
                 socket = server.accept();
-                System.out.println("Client connected");
+                logger.info("Client connected");
                 new ClientHandler(socket, this);
             }
         } catch (IOException e) {
@@ -33,6 +36,7 @@ public class Server {
                 server.close();
             } catch (IOException e) {
                 e.printStackTrace();
+                logger.log(Level.SEVERE, "close", e);
             }
         }
     }
