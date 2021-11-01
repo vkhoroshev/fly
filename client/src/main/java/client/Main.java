@@ -14,6 +14,7 @@ public class Main extends Application {
         primaryStage.setTitle("Home Chat");
         primaryStage.setScene(new Scene(root, 640, 480));
         primaryStage.show();
+
     }
 
     public static void main(String[] args) {
